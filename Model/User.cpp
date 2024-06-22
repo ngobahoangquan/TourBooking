@@ -4,7 +4,7 @@ User::User() {}
 
 User::~User() {}
 
-User::User(string username, string password, string displayName, string birthOfDate, string phoneNumber, string address, string role) : username(username), password(password), displayName(displayName), birthOfDate(birthOfDate),
+User::User(string username, string password, string displayName, string dateOfBirth, string phoneNumber, string address, string role) : username(username), password(password), displayName(displayName), dateOfBirth(dateOfBirth),
                                                                                                                                         phoneNumber(phoneNumber), address(address), role(role) {}
 
 User User::operator=(const User &other)
@@ -12,7 +12,7 @@ User User::operator=(const User &other)
     username = other.username;
     password = other.password;
     displayName = other.displayName;
-    birthOfDate = other.birthOfDate;
+    dateOfBirth = other.dateOfBirth;
     phoneNumber = other.phoneNumber;
     address = other.address;
     role = other.role;
@@ -33,9 +33,9 @@ string User::getDisplayName() const
     return displayName;
 }
 
-string User::getBirthOfDate() const
+string User::getDateOfBirth() const
 {
-    return birthOfDate;
+    return dateOfBirth;
 }
 
 string User::getPhoneNumber() const
@@ -69,9 +69,9 @@ void User::setDisplayName(const string &dispName)
     displayName = dispName;
 }
 
-void User::setBirthOfDate(const string &birthDate)
+void User::setDateOfBirth(const string &birthDate)
 {
-    birthOfDate = birthDate;
+    dateOfBirth = birthDate;
 }
 
 void User::setPhoneNumber(const string &phoneNum)
