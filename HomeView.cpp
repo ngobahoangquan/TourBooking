@@ -2,7 +2,7 @@
 
 string user_username = "testString";
 string user_role = "testString";
-void HomeView(void)
+void HomeView(void) 
 {
     int choice;
 
