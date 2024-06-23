@@ -33,22 +33,18 @@ void HomeView(void)
             case 1:
                 OSCFG_System_Cls();
                 LoginView();
-                OSCFG_System_Pause();
                 break;
             case 2:
                 OSCFG_System_Cls();
                 RegisterView();
-                OSCFG_System_Pause();
                 break;
             case 3:
                 OSCFG_System_Cls();
                 AvailableToursView();
-                OSCFG_System_Pause();
                 break;
             case 4:
                 OSCFG_System_Cls();
                 AboutUsView();
-                OSCFG_System_Pause();
                 break;
             case 0:
                 ExitView();
@@ -77,7 +73,7 @@ void LoginView(void)
         {
             user_username = username;
             user_role = "admin";
-            //AdminView_Home();
+            // AdminView_Home();
             break;
         }
         else if (loginRole == 1)
