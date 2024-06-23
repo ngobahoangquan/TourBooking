@@ -29,20 +29,17 @@ void CustomerView_Home()
             case 1:
                 OSCFG_System_Cls();
                 CustomerView_Home_Profile();
-                OSCFG_System_Pause();
                 break;
             case 2:
                 OSCFG_System_Cls();
                 CustomerView_Home_Orders();
-                OSCFG_System_Pause();
                 break;
             case 3:
                 OSCFG_System_Cls();
                 CustomerView_Home_BookTour();
-                OSCFG_System_Pause();
                 break;
             case 0:
-                //CustomerView_Home_Exit();
+                CustomerView_Home_Exit();
                 return;
             default:
                 break;
